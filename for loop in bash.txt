@@ -1,1 +1,20 @@
 for u in {2015..2020}; do echo $u; done
+
+for i in {1..10}; do echo $i; done
+מדפיס את המספרים 1 עד 10.
+
+דוגמה 2
+for n in {a..f}; do echo $n; done
+מדפיס את האותיות a עד f.
+
+דוגמה 3
+for f in *.txt; do echo $f; done
+עובר על כל קובצי ה־txt בתקייה ומציג את שמם.
+
+דוגמה 4
+for u in user1 user2 user3; do echo $u; done
+מציג שלושה ערכים שניתנו ידנית.
+
+דוגמה 5
+for s in {01..05}; do echo "backup_$s"; done
+יוצר שמות סדרתיים בסגנון backup_01 עד backup_05.
