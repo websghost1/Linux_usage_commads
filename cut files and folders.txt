@@ -1,0 +1,20 @@
+move all files and folders to another folder:
+
+mv {app,Dockerfile} ~/Desktop/docker_file_example/dockerfile1/
+
+
+כדי להזיז בבת אחת את כל התוכן של תיקייה (למעט קבצים נסתרים) לתיקייה אחרת, תוכל להשתמש ב־ wildcard (`*`):
+
+mv ~/Desktop/docker_file_example/* ~/Desktop/docker_file_example/dockerfile1/
+
+אם אתה רוצה לכלול גם קבצים ותיקיות נסתרים (ששמותיהם מתחילים בנקודה), תוכל להריץ:
+
+mv ~/Desktop/docker_file_example/{*,.*} ~/Desktop/docker_file_example/dockerfile1/
+
+שימו לב: הסימון `{*,.*}` ייקח גם `.` ו־`..` ולכן כדאי לוודא ש־`dockerfile1/` כבר קיים, או לחילופין להשתמש ב:
+
+shopt -s dotglob
+mv ~/Desktop/docker_file_example/* ~/Desktop/docker_file_example/dockerfile1/
+shopt -u dotglob
+
+– הפקודה הראשונה `shopt` אומרת ללשׁלּמי (shell) לכלול קבצים נסתרים ב־`*`, ואחרי ההעברה אנחנו מכבים את האפשרות בחזרה.

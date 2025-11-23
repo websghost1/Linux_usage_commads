@@ -1,0 +1,110 @@
+#creat directory:
+mkdir blahblah
+
+#creat folder inside folder
+
+mkdir first1_dir/new_dir_name
+
+#ליצור תיקייה שלא קיימת בתוך תיקייה שלא קיימת - ליצור עץ תיקיות
+
+mkdir -p new_dir1/leidertech.co.il
+
+#ליצור כמה וכמה תיקיות בתוך תיקייה שלא קיימת
+
+mkdir -p new_dir1/{leidertech.co.il1,leidertech.co.il2,leidertech.co.il3,leidertech.co.il4} (לכתוב בלי רווח בין הפסיקים)
+
+
+#Move files to another folder:
+mv leidertech.co.il1.txt leidertech.co.il2.txt leidertech.co.il3.txt /home/leidertech.co.il/Desktop/Learn_linux/
+
+#למחוק תיקייה שמקבלים שגיאה על זה שהתיקייה לא ריקה
+rm -r dir
+
+#למחוק את כל הקבצים או התיקיות שמתחילות באות מסויימת
+
+rm S*
+
+#Commands to Force Remove File or Directory in Linux:
+
+rm -d	Remove an empty directory using the rm command.
+rm -r	Remove a non-empty directory and its content
+rm -f	Ignore any prompt when deleting a write-protected file.
+rm -rf	Ignore any prompt when deleting a write-protected non-empty folder.
+rm -i	Output a prompt before deleting every file.
+rm -1	Output a prompt only once before deleting more than three files.
+rm *	Wildcard that represents multiple characters.
+rm ?	Wildcard that represents a single character.
+rmdir -p	Remove an empty subdirectory and its parent directory.
+rmdir -v	Print the information that the specified directory was deleted.
+
+#How To Force Remove an Empty Directory in Linux?:
+
+rmdir [options] [directory name]
+
+You can also combine the rmdir with additional options for specific removing demand.
+
+The rmdir command has the following options:
+
+–ignore-fail-on-non-empty: Does not display an error message when attempting to remove a non-empty directory.
+-p: Removes the directory and its parent from the hierarchy.
+-v: Produces a verbose output.
+–help: Shows help text.
+–version: Indicates the command version.
+
+#How To Force Remove a Directory That Contains Files or Sub-directories
+
+Step 1. To force remove a directory with files and subdirectories, run the rm command with the -rf option:
+
+rm -rf dirName
+
+Step 2. Assume you have a directory called /tmp/data/ that contains the following two files and one directory:
+
+ls -l /tmp/data/
+
+Step 3. If you run the rmdir command, you will receive the following error:
+
+rmdir /tmp/data/
+
+Step 4. As previously stated, rmdir only deletes empty directories. To remove an entire directory in Linux, you must use the rm command:
+
+rm -rf /tmp/data/
+
+Step 5. Check it out:
+
+ls -l /tmp/data/
+
+#Part 4. How To Force Remove a Full Directory in Linux With Verbose Output
+Step 1. Assign the -v flag to the rm command as follows:
+
+rm -rfv dirname
+
+Step 2. For example, you will delete a full directory named /tmp/bar. Take note of the output on the screen:
+
+rm -rfv /tmp/bar/
+
+Wherein:
+
+-r: Recursive delete
+-f: Delete a directory by force
+-v: Produces verbose output
+
+
+#Getting the Permission Denied Message? How To Fix
+
+You must have appropriate directory access permissions to force remove a directory in linux. Otherwise, the rmdir screen will display a permission-denied message.
+
+Step 1. Use the prefix sudo at the start of the rm command to avoid this error:
+
+sudo rm -rf dirName
+
+Or:
+
+sudo rm -rf /somedir/
+
+Step 2. To delete a folder whose name begins with a “-,” such as “-backups,” enter one of the following commands:
+
+rm -rfv -- -backups/
+
+Or:
+
+rm -rfv ./-backups/

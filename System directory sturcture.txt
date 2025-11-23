@@ -1,0 +1,47 @@
+/ - mount point
+
+כמעט כל דבר בלינוקס הוא קובץ, כמו כן גם הפקודות שאנחנו מריצים, בעצם כל פקודה היא כמו מודול, שאפשר לראות את התוכן שלו וגם לערוך אם אנחנו רוצים
+כל ה"מודולים" האלה יושבים בתוך תיקיית 
+/bin - User binary files
+
+/boot - boot loader files
+
+תקייה של התקנים 
+/dev - device files
+
+/etc - configuration files - כל הקונפיגורציה, שם המחשב, כתובות של מחשבים או של המחשב שלך - הכל יושב פה.
+
+תיקיות הבית של המתמש
+/home - home direcotories
+
+תקייה של הדרייברים שצריך לאיתחול מערכת ההפעלה, זאת אומרת בשביל להעלות את המערכת
+/lib - system libraries
+
+תקייה שאליה מקובל לחבר התקני יו אס בי או כל מדיה חיצונית
+(ניתן לחבר את המדיה לכל מקום אח)
+/media - mout point for removalble media
+
+/mnt - mount point for temporary file systems
+
+תקייה שבה נמצאים כל התוכנות שאנחנו מתקינים לדוגמא גוגל כרום, וואטסאפ וכד
+/opt - optional add-on applications
+
+אותו דבר כמו תקיית בין רק שבשביל לקרוא תוכן מתוך התיקייה הזאת צריך הרשאות של רוט
+/sbin - system binaries
+
+/srv - services Data
+
+תקייה של קבצים זמניים
+/tmp - temporary files
+
+תקייה של תוכנות ספציפיות של המשתמש
+/usr - user programs
+
+/var - variable files
+
+/root - root user dirctory
+
+תקייה שבא נמצאים כל התהליכים של המערכת
+/proc - process information
+
+/lost + found - mispalced Data

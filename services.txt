@@ -1,0 +1,78 @@
+#list all the services in the system:
+systemctl --type=service
+
+#list all running services
+systemctl list-units --type=service --state=running
+
+#all the eanbled services (לא אומר שהם רצים):
+systemctl --type=service --state=active
+
+#list all disabled services:
+systemctl list-unit-files --state=disabled
+
+#מראה סרוויסים שלא הצליחו להעלות בתהליך העליה של המחשב
+systemctl list-units --type=service --state=failed,exited
+
+#לעצור סרוויס
+sudo systemctl stop <service_name>
+
+#להפעיל סרוויס
+sudo systemctl start <service_name>
+
+#להפעיל מחדש סרוויס
+sudo systemctl restart <service_name>
+
+#טעינה מחדש של סרוויס בלי לבצע פעולות ניתוק - מיועד לעדכון של קונפיגורציה
+sudo systemctl reload <service_name>
+
+#להגדיר שהסרוויס ירוץ אוט' לאחר הפעלה מחדש
+
+systemsctl enable <service_name>
+
+#להגדיר שהסרוויס לא ירוץ אוט' לאחר הפעלה מחדש
+
+systemctl disable <service_name>
+
+
+#להציג מצב של סרוויס ספציפי
+systemctl status ITShirts_bot 
+
+#לחפש איזשהו סרוויס
+
+systemctl --type=service --state=running |grep snapd
+
+# הפעלה מחדש של סרוויסים
+sudo systemctl restart ITShirts_bot
+
+sudo systemctl restart ITShirts_police_bot
+
+#more info:
+systemctl start frobozz - Used to start a service
+
+systemctl stop frobozz - Used to stop a service
+
+systemctl restart frobozz - Used to stop and then start a service
+
+systemctl reload frobozz - reloads the config file without interrupting pending operations.
+
+systemctl condrestart frobozz - Restarts if the service is already running
+
+systemctl status frobozz - Tells whether a service is currently running
+
+systemctl (or) systemctl list-unit-files -type=service - Used to list the services that can be started or stopped
+
+Is /lib/systemd/system/*.service /etc/systemd/system/*.service - Used to list all the services and other units
+
+systemctl enable frobozz - Turn the service on. for start at next boot, or other trigger.
+
+systemctl disable frobozz - Turn the service off for the next reboot or any other trigger
+
+systemctl is enabled frobozz - Used to check whether a service is configured to start or not in the current environment.
+
+systemctl list-unit-files -type=service (or) Is /etc/systemd/system/• wants/ - Print a table of services that lists which runlevels each is configured on or off
+
+systemctl list-dependencies graphical.target - Print a table of services that will be started when booting into graphical mode
+
+Is /etc/systemd/systemr wants/frobozz service - Used to list what levels this service is configured on or off
+
+systemctl daemon-reload - Used when you create a new service file or modify any configuration

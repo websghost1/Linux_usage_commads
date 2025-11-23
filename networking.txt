@@ -1,0 +1,41 @@
+netstat -tulpn - מראה תהליכים שמאזינים לפורטים
+
+ip a - להציג את כל כרטיסי הרשת עם כל הכתובות
+
+IP לקבל כתובת
+ip -4 addr
+
+hostname -i
+ip addr \ ip addr show
+
+netstat -rn - טבלת ניתובים
+
+לקבל פורטים פעילים:
+netstat -i
+
+TCP לקבל מידע רק על פורטים של:
+netstat -at
+
+
+ip r - טבלת ניתובים בצורה יותר מפורטת
+
+mtr - רק הרבה יותר מפורטTRACEROUT כמו
+
+dig - רק הרבה יותר מפורט NSLOOKUP כמו
+
+dig @8.8.8.8 rvm.co.il - לבקש מידע מ 8.8.8.8
+
+dig -t mx leidertech.ru - "-t" - מאפשר לבחור רשומה לבדיקה
+
+curl -v telnet://193.109.246.150:80 - בדיקת פורט פתוח עם טלנט אבל דרך קורל
+
+ - בדיקה האם המחשב המרוחק בפורט מסויים מקבל מידע בכלל
+sudo tcpdump -i any port 9100 -nn
+
+DNS עריכה של שרת:
+nano /etc/resolv.conf
+
+עריכה של קובץ הוסטס:
+ nano /etc/hosts
+
+

@@ -1,0 +1,21 @@
+יצירת תיקייה אחת 
+
+mkdir one
+
+יצירת עץ תיקיות:
+mkdir -p one/two/three
+
+יצירת קובץ ריק
+touch file1.txt
+
+יצירת כמה קבצים ביחד
+touch file1.txt file2.txt file3.txt
+
+הוספת טקסט לתוך קובץ:
+
+cat>file1 blah blah blah
+בשביל לשמור את זה נלחץ על 
+ctrl+d 
+
+
+

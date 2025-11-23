@@ -1,0 +1,38 @@
+לקבל מידע על משתמש
+id root
+
+#לראות אילו משתמשים יש בשרת:
+כל שורה היא משתמש
+ cat /etc/passwd
+
+#Creat user - לא יוצר תיקיית בית
+sudo useradd user1
+
+#Creat user with home directory
+sudo useradd -m user1
+
+
+#למחוק משתמש - לא מוחק את תיקיית הבית
+userdel blahblah
+
+
+#למחוק משתמש ואת תיקיית הביית שלו
+sudo userdel -r user1
+
+
+#הגדרות ברירת מחדל לתהליך יצירת משתמש חדש במערכת
+באיזו תיקייה תווצר תיקיית הבית, באיזה סביבת עבודה הוא יעבוד וכד
+cat /etc/default/useradd
+
+#Change password for you current user:
+passwd
+
+#Set password to spesific user:
+sudo passwd user1
+
+#Creat system user (משתמש למשימות, הרצת סקריפטים וכד ברקע):
+sudo useradd -r user1
+
+
+
+

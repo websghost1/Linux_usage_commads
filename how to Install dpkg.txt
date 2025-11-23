@@ -1,0 +1,39 @@
+#dpkg התקנה של חבילות מסוג
+
+sudo dpkg -i blahblah.deb
+
+#קבלת מידע אודות החבילה
+
+sudo dpkg --info
+
+#לקבל מידע אודות מה מותקן במערכת
+
+dpkg --list
+
+#לקבל מידע אודות חבילת התקנה ספציפית
+
+dpkg --list |grep teamviwer
+
+#אפשר גם ככה
+dpkg --l |grep teamviwer
+
+
+#לקבל מידע על תיקיות וקבצים של תוכנה מסויימת
+
+dpkg --listfiles teamviwer
+#אפשר גם ככה
+dpkg -L teamviwer
+
+#להסיר תוכנה
+dpkg --remove teamviewer
+אפשר גם ככה
+dpkg --r teamviewer
+
+#לראות תוכן של החבילה
+dpkg -c teamviewer.deb
+
+#Setup Files לראות
+
+dpkg -s teamviewer.deb
+
+

@@ -1,0 +1,41 @@
+#install samba:
+ sudo apt install samba
+
+#creat folder to share
+sudo mkdir /home/username/sharedfolder
+
+
+#rename save old conf:
+sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
+
+#creat and edit new conf:
+sudo nano /etc/samba/smb.conf
+
+add this to file:
+
+[global]
+workgroup = WORKGROUP
+server string = Samba Server %v
+netbios name = ubuntu
+security = user
+map to guest = bad user
+name resolve order = bcast host
+dns proxy = no
+
+#creat new folder with a name:
+[Public]
+   comment = Ubuntu File Share
+   path = /srv/samba/share
+   browsable = yes
+   writable = yes
+   guest ok = yes
+   read only = no
+   create mode = 0777
+   directory mode 0777
+   force user = nobody
+
+#next run:
+sudo chmod -R 0777 [full path to folder]
+
+#restart service:
+sudo systemctl restart smbd.service nmbd.service

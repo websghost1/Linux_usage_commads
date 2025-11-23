@@ -1,0 +1,32 @@
+#shutdown without password:
+sudo power off
+
+
+#This command will immediately shut down the system:
+
+shutdown -h now
+
+#restart the computer
+sudo shutdown -r now
+
+
+#if you want to dilay the restart
+
+sudo shutdown -r 10 -יעשה הפעלה מחדש בעוד 10 דקות
+
+
+#הפעלה מחדש בשעה מסויימת
+
+sudo shutdown 22:30
+
+#Restart the pc
+sudo reboot now
+
+#force reboot:
+sudo reboot -f 
+
+#shutdown
+sudo init 0 
+
+#restart
+sudo init 6

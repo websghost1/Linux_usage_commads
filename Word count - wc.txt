@@ -1,0 +1,2 @@
+# סופר את השורות 
+cat /etc/passwd |wc -l

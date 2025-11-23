@@ -1,0 +1,7 @@
+#Alias - ליצור קיצור של פקודה
+
+alias ls = "ls -lhF --time-syle blah blah bla"
+
+#להציג אליאס של משהו
+
+alias ll

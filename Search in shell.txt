@@ -1,0 +1,5 @@
+search somthing one:
+sudo systemctl status leidertech.co.il_bot |grep active
+
+like "select object"
+sudo systemctl status leidertech.co.il_bot | grep -e "active\|memory"

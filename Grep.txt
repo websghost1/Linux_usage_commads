@@ -1,0 +1,59 @@
+find mac adress:
+
+ip a |grep -P '[0-9a-f][0-9a-f]:[0-9a-f][0-9a-f]:[0-9a-f][0-9a-f]:[0-9a-f][0-9a-f]'
+
+[0-9a-f][0-9a-f] - 
+הצג את כל הסימנים מ 0 עד 9 ומהאות
+a
+f עד לאות 
+ואז יש 
+":"
+ואז עוד פעם אותו דבר
+
+ip a |grep -P '([0-9a-f][0-9a-f]{2}:){5}[0-9a-f]{2}'
+
+apt-cache search server |grep -i apache
+
+"-i" - להתעלם האם אות גדולה או קטנה, למצוא את הכל
+
+ls -lhaF | grep ^l   # list links
+ls -lhaF | grep ^d   # list directories
+ls -lhaF | grep ^-   # list files
+
+
+#ידפיס כל שורה שבה לא נמצאת המילה
+-v port
+"Port"
+
+/home/lev1.txt |grep -v Port
+
+#לא חייב להשתמש בזה דרך פייפליין
+אפשר לכתוב בשביל למצוא דברים בתוך קובץ
+
+grep blahblah /home/lev1.txt
+
+#להוסיף מספרי שורות לתוצאה
+
+grep -n Shnitzel lev1.txt
+
+מחפש את המילה "שניצל" בקובץ לב
+התוצאה תהיה עם מספרי שורות
+
+#סופר את כמות הפעמים שהמילה מופיעה בקובץ
+
+grep -c Shnitzel lev1.txt
+
+(חשוב להקפיד על אותיות גדולות וקטנות)
+
+#לבטל תלות באותיות גדולות או קטנות
+
+grep -i Shnitzel lev1.txt
+
+#חיפוש רקורסיבי
+
+grep -r Shnitzel lev1.txt
+
+#שילוב פרמטרים
+(חיפוש של המילה רקורסיבית ולהתעלם מאותיות גדולות וקטנות)
+grep -ri Error /var/log
+

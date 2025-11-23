@@ -1,0 +1,69 @@
+list process:
+
+ps -efl
+ps -t - להראות טרמינל
+ps -ux - להציג פרוססים של המשתמש הנוכחי 
+ps -l List processes of current session
+ps -f - List processes with full formatting
+ps -e - List all processes
+ps -u [username] - List processes of [username]
+ps -p [PID] - Display information PID, you can use it with several process ps -p 1245,654654,6546654
+ps -eo - pick colums to show in output exmpl: uname,pid,ppid,nlwp,pcpu,pmem,psг,start-time,tty,time,args
+ps -ef all processes with command lines truncated to screen width
+ps -efH: כל התהליכים בתצוגה מושחלת, שמכניסה תהליכים ילדים מתחת להוריהם
+kill:
+•	Ctrl + с - Stop process
+•	kill [PID]-Stop process
+•	kill -9 [PID] - Force stop process
+
+
+#top - להראות פרוססים - מאוד לא נוח
+
+#top - מקרא#
+pid - process id
+user - איזה יוזר מריץ את הפרוסס
+pr - priority - from 20 to -20
+ni - nice valeu of a task
+VIRT - virtual memory - in kb
+RES - phisical memory - in kb
+SHR - shaerd memory - in kb
+S - status - 1) D = Uninterepptable sleep 2) R = Running 3) S= sleeping 4)T = traced or Stopped 5) Z = Zombie 
+CPU = cpu usage
+MEM - phisical memory usage in kb
+time - cpu time
+command - which command is running
+
+
+
+#htop - להראות פרוססים בצורה מפורטת עם זכרון
+
+#vmstat - עוד נתונים
+
+#ps aux - להציג את כל הפרוססים, משתמש והאיי די של הפרוסס
+
+#kill [id] - להרוג פרוסס
+
+#להפעיל תהליך עם עדיפות ספציפית
+-20 to 20
+nice -n [Value] process name
+
+#אם התהליך הזה כבר רץ, אפשר לתת לו עדיפות גם כן
+sudo renice [Value] -p [process ID]
+
+#send process to background
+bg
+
+#run a stopped process in foureground
+fg
+
+#get status of spesific process
+ps [pid]
+
+#process id of process
+
+pidof [process name]
+
+#kill process by name
+
+killall -9 [process_name]
+

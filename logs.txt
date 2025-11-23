@@ -1,0 +1,5 @@
+cd /var/log - תיקייה של לוגים
+ls -lah - הצגה בצורה קריאה של לוגים
+ ls -lah /var/log/auth.log - פעולות שהיה צריך סיסמא של רוט בשבילו או כניסה לשרת
+ journalctl -xeu service_name - לראות מידע על סרוויס
+

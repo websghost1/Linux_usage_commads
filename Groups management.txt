@@ -1,0 +1,43 @@
+#Show group membership of user:
+groups user1
+
+#Show your membership in groups:
+groups
+
+#Show all groups on the computer:
+cat /etc/group
+
+#Creat group:
+sudo groupadd gamers
+
+למחוק קבוצה:
+sudo groupdel blahblah
+
+
+לעבוד בתור אדמין
+
+sudo -i
+  
+הוספת משתמש לקבוצות:
+שינויים למשתמש בעזרת
+
+usermode
+
+העברה לקבוצה אחרת:
+G - בכונה גדול
+הבעיה שבצורה הזאת הוא יוצא מקבוצה אחת והולך לקבוצה שאנחנו צריכים
+זאת אומרת הוא עובר קבוצה ולא מתווסף לקבוצה נוספת
+בשביל שהוא יתווסף לקבוצה כלשהיא בלי לצאת מהקבוצה שהוא נמצא בה
+נשתמש בפרמטר
+a - קטן
+ביחד
+-aG
+
+sudo usermode -aG <group_name> username
+
+למחק משתמש מתוך קבוצה:
+sudo gpasswd -d user_name group_name
+
+
+
+

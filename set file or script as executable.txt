@@ -1,0 +1,14 @@
+1) creat file with name and extention "sh":
+
+myscript.sh
+
+2) edit the file like that:
+#! /bin/bash
+sudo systemctl restart leidertech.co.il_bot
+
+
+3) save file
+4) run chmod +x my_script.sh
+
+5) to run the file from the current directory: 
+./myscript_sh
