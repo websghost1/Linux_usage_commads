@@ -1,0 +1,38 @@
+להראות רק את החלק העליון של קובץ טקסט
+
+head /var/log/syslog |wc -l
+
+wc -l
+
+wc = word count 
+l - שורות
+סופר את השורות
+
+להראות את שלושת השורות הראשונות
+
+head -3 /var/log/syslog | wc -l
+
+בשביל שיהיה יותר קל לקריאה ולהשתמש בעוד כל מיני פרמטרים
+
+head -n 3 /var/log/syslog | wc -l
+
+tail
+מאפשר לראות בלייב חומר שמתווסף לקובץ
+
+tails -f /var/log/auth.log
+
+לחפש רק 
+SSH
+בתוך הקובץ
+
+grep SSHd /var/log/ |less
+
+בשביל להציג הכל חוץ מ
+SSH
+grep -v cron /var/log
+
+לפלטר כמה דברים
+
+cat /var/log/auth |grep blahblah |grep blahbla
+
+

@@ -1,0 +1,13 @@
+if i need to calc subnet for ubuntu:
+
+1) https://www.calculator.net/ip-subnet-calculator.html
+
+2) choose subnet : 255.255.255.192 /26
+
+3) write ip adress: 10.150.152.82
+
+4) למטה מקבלים תווכים של כתובות אז הכתובת שבחרנו נכנסת בתוך התווך:
+10.150.152.65 - 10.150.152.126	
+
+לכן הסאבנט שלנו יהיה 
+10.150.152.64 /26

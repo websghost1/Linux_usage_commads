@@ -1,0 +1,22 @@
+1.
+#find the name of the USB drive
+sudo fdisk -l
+
+#לדוגמא
+
+Device     Boot Start        End    Sectors  Size Id Type
+/dev/sdd1          64 3907024128 3907024065  1.8T  7 HPFS/NTFS/exFAT
+
+2.
+#ליצור תיקייה בשולחן העבודה (או בכל מקום אחר רק שיהיה נוח) לחבר אליה את התיקייה
+
+mkdir USB-Drive
+
+
+3.
+#mount the drive:
+sudo mount /dev/sdd1 /home/leidertech.co.il/Desktop/USB-Drive/
+
+4.
+#unmount 
+sudo umount /home/leidertech.co.il/Desktop/USB-Drive

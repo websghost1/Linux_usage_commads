@@ -1,0 +1,56 @@
+for leidertech.co.il.bot:
+
+1. Creat service file:
+sudo nano /etc/systemd/system/Bot_name.service
+
+
+2. add to service file:
+[Unit]
+Description=leidertech.co.il_bot Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/lev/Desktop/Bot/leidertech.co.il_bot.py
+Restart=always
+User=lev
+Group=lev
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=PYTHONPATH=/usr/lib/python3.8/site-packages
+
+
+[Install]
+WantedBy=multi-user.target
+
+3.reload systemd and start the service:
+sudo systemctl daemon-reload
+
+4.run the service:
+sudo systemctl start LeiderTech.co.il_bot
+
+5.enable the service
+sudo systemctl enable LeiderTech.co.il_bot
+
+6.check service status
+sudo systemctl status LeiderTech.co.il_bot
+
+
+#-------------------------#
+
+To edit the script:
+
+1. stop the service:
+sudo systemctl stop leidertech.co.il_bot
+
+2. edit the script
+
+3.restart the service
+sudo systemctl start LeiderTech.co.il_bot
+
+4.check service status:
+
+sudo systemctl status LeiderTech.co.il_bot
+
+
+sudo chown -R lev:lev /home/lev/Desktop/Bot/leidertech.co.il_bot/bad_words.txt
+
+

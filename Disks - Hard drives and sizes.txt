@@ -1,0 +1,19 @@
+df -h
+
+#check how much storage takes folder
+
+du -s /Downloads
+
+
+#check disks:
+sudo lsblk -e7
+
+#exclude all but disks:
+
+lsblk -f | grep -v '^loop'
+
+#choose what to show:
+sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
+
+#best for me:
+sudo lsblk -o NAME,FSTYPE,SIZE,LABEL |grep -v '^loop'

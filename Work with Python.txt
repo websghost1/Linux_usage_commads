@@ -1,0 +1,26 @@
+#setup:
+
+sudo apt install python3-venv
+
+mkdir my_project
+cd my_project
+
+python3 -m venv venv
+
+
+source venv/bin/activate
+
+
+#now you can use pip to install stuff 
+
+pip install selenium requests pillow
+
+
+
+#to work on linux with python you have to enter venv mode:
+
+source venv/bin/activate
+
+#when you done, exit venv mode
+
+deactivate

@@ -1,0 +1,6 @@
+#creat a shurtcut for file to desktop
+
+ln -s /נתיב לתיקייה שאתה רוצה ליצור לה קיצור דרך/ ~/where_to_put_the_shurtcut
+
+ln -s /media/lev/ext-HDD ~/Desktop/
+

@@ -1,0 +1,46 @@
+חיפוש חבילה
+apt-cache search server
+
+* apt install equals apt-get install
+* apt remove equals apt-get remove
+* apt purge equals apt-get purge
+* apt autoremove equals apt-get autoremove
+* apt search equals apt-cache search
+* apt show equals apt-cache show
+
+#לבדוק מה יש לעדכן
+
+sudo apt update 
+
+
+#התקנת חבילות 
+
+sudo apt install blahblah
+
+#התקנת כמה חבילות ביחד
+
+sudo apt install tmux htop git
+
+
+#להסיר חבילה
+
+sudo apt remove htop
+
+#לחפש חבילה
+
+apt search vim
+
+#מעדכן תוכנות ללא הוספת תוכנות נוספות
+
+sudo apt upgrade
+
+#מבצע עדכון ובמידה ויש תלות בתוכנות מסויימות הוא מתקין גם אותן
+sudo apt dist-upgrade 
+
+#לראות את כל הרשימה של הרפוסיטורי
+
+sudo nano /etc/apt/sources.list
+
+
+
+

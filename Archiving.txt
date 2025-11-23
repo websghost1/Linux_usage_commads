@@ -1,0 +1,22 @@
+Create tar from files
+
+• tar cvf archive.tar
+
+List content of archive
+
+• tar tvf archive.tar
+
+Add to file or dir to archive 
+• tar rvf archive.tar 
+
+filel file2 dirl dir2
+file3
+dir3
+
+#zip
+mthod 1:
+
+unzip <zipfile> -d <destination_directory>
+
+method 2:
+unzip demo.zip -d destination

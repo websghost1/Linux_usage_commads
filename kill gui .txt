@@ -1,0 +1,6 @@
+stop gui:
+sudo systemctl stop gdm3
+
+to start gui:
+
+sudo systemctl start gdm3

@@ -1,0 +1,9 @@
+#העתקה רגילה
+cp blahblha ./dir1/
+
+#copy from one folder to anoder:
+cp Men\ in\ Black.1997.WEB-DL.1080p.mkv /home/Desktop/USB-Drive/
+
+#copy with progress bar:
+
+rsync -ah --progress ~/Desktop/Downloaded_toreents/Trаnsfоrmеrs.2007.BDRip.x264.aac.[rutracker.org] ~/Desktop/mnt/
