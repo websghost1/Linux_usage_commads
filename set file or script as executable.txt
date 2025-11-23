@@ -2,15 +2,15 @@
 
 myscript.sh
 
-2) edit the file like that:
+2) edit the file like that (create some commands or what ever):
 #!/bin/bash
 #פקודה לדוגמא
-sudo systemctl restart myscript.sh
+sudo systemctl restart nginx
 
-3) save file
-ctrl+O -> ctrl+X
+3) save file ( O = האות)
+ctrl+o -> ctrl+X
 
-4) run chmod +x my_script.sh
+4) run chmod +x myscript.sh
 
 5) to run the file from the current directory: 
-./myscript_sh
+./myscript.sh
