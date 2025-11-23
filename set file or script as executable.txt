@@ -4,7 +4,7 @@ myscript.sh
 
 2) edit the file like that:
 #! /bin/bash
-sudo systemctl restart leidertech.co.il_bot
+sudo systemctl restart myscript.sh
 
 
 3) save file
