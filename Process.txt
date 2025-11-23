@@ -17,7 +17,7 @@ kill:
 •	kill -9 [PID] - Force stop process
 
 
-#top - להראות פרוססים - מאוד לא נוח
+#top - להראות פרוססים - מאוד לא נוח (מתחת יש אחד יותר נוח ממנו בהרבה)
 
 #top - מקרא#
 pid - process id
