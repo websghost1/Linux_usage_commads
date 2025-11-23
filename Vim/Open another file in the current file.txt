@@ -1,0 +1,5 @@
+#open another file in the current file
+
+1.Esc
+2.r <file name> (or path to the file if the file is not the the current directory)
+

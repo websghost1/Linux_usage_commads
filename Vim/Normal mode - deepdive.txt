@@ -1,0 +1,16 @@
+#לעשות דברים בלי להכנס למצב עריכה
+
+#delete one charecter - x
+
+#delete\copy entire line - dd
+
+#pasete entire line - p
+
+#move up:k
+
+#move down:j
+
+#move left:h
+
+#move right:l
+
