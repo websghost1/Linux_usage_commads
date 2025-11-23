@@ -3,11 +3,13 @@
 myscript.sh
 
 2) edit the file like that:
-#! /bin/bash
+#!/bin/bash
+#פקודה לדוגמא
 sudo systemctl restart myscript.sh
 
-
 3) save file
+ctrl+O -> ctrl+X
+
 4) run chmod +x my_script.sh
 
 5) to run the file from the current directory: 
