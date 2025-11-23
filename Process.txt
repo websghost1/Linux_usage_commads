@@ -34,8 +34,14 @@ time - cpu time
 command - which command is running
 
 
-
+הכי נוח זה הכלי הזה:
 #htop - להראות פרוססים בצורה מפורטת עם זכרון
+
+אבל הוא לא מגיע מובנה, צריך להתקין אותו:
+sudo apt install htop -y
+אחרי זה פשוט מריצים
+htop
+
 
 #vmstat - עוד נתונים
 
